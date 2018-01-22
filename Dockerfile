@@ -16,3 +16,4 @@ RUN pip install grpcio
 RUN pip install grpcio-tools
 RUN pip install kazoo
 RUN pip install aliyun-log-python-sdk
+RUN pip install dotenv
