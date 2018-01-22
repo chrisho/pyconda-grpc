@@ -3,9 +3,9 @@ FROM msarahan/concourse-anaconda_org-resource
 RUN apt-get update -y
 RUN apt-get install pandoc vim -y
 
-RUN conda install pymysql
+RUN pip install pymysql
 
-RUN conda install sqlalchemy 
+RUN pip install sqlalchemy 
 
 RUN pip install python-dotenv
 
