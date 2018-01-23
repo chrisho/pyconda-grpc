@@ -1,4 +1,4 @@
-FROM python:3.6-jessie
+FROM python:3.6
 #FROM debian:jessie
 
 #RUN apt-get update --fix-missing && apt-get install -y wget bzip2 ca-certificates \
@@ -9,6 +9,8 @@ FROM python:3.6-jessie
 #    wget --quiet https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh -O ~/anaconda.sh && \
 #    /bin/bash ~/anaconda.sh -b -p /opt/conda && \
 #    rm ~/anaconda.sh
+RUN apt-get update
+RUN apt-get install -y pandoc
 
 RUN pip install pymysql
 RUN pip install sqlalchemy 
