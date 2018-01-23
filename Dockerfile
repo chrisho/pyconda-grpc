@@ -10,7 +10,7 @@ FROM python:3.6
 #    /bin/bash ~/anaconda.sh -b -p /opt/conda && \
 #    rm ~/anaconda.sh
 RUN apt-get update
-RUN apt-get install -y pandoc
+RUN apt-get install -y pandoc vim
 
 RUN pip install pymysql
 RUN pip install sqlalchemy 
@@ -21,3 +21,4 @@ RUN pip install kazoo
 RUN pip install aliyun-log-python-sdk
 RUN pip install psutil
 RUN pip install pandas
+
