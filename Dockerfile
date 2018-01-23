@@ -1,4 +1,4 @@
-FROM debian:3.6-stretch
+FROM python:3.6-stretch
 #FROM debian:jessie
 
 #RUN apt-get update --fix-missing && apt-get install -y wget bzip2 ca-certificates \
