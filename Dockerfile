@@ -21,4 +21,5 @@ RUN pip install kazoo
 RUN pip install aliyun-log-python-sdk
 RUN pip install psutil
 RUN pip install pandas
+RUN pip install schedule
 
