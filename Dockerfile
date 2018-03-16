@@ -23,3 +23,4 @@ RUN pip install psutil
 RUN pip install pandas
 RUN pip install schedule
 RUN pip install mpld3
+RUN pip install matplotlib
