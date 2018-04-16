@@ -12,17 +12,18 @@ FROM python:3.6
 RUN apt-get update
 RUN apt-get install -y pandoc vim
 
-RUN pip install pymysql
-RUN pip install sqlalchemy 
-RUN pip install python-dotenv
-RUN pip install grpcio
-RUN pip install grpcio-tools
-RUN pip install kazoo
-RUN pip install aliyun-log-python-sdk
-RUN pip install psutil
-RUN pip install pandas
-RUN pip install schedule
-RUN pip install mpld3
-RUN pip install matplotlib
-RUN pip install jinja2
+#RUN pip install pymysql
+#RUN pip install sqlalchemy 
+#RUN pip install python-dotenv
+#RUN pip install grpcio
+#RUN pip install grpcio-tools
+#RUN pip install kazoo
+#RUN pip install aliyun-log-python-sdk
+#RUN pip install psutil
+#RUN pip install pandas
+#RUN pip install schedule
+#RUN pip install mpld3
+#RUN pip install matplotlib
+#RUN pip install jinja2
 
+RUN pip install -r requirements.txt
