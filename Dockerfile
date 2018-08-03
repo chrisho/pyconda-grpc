@@ -26,5 +26,6 @@ RUN apt-get install -y pandoc vim
 #RUN pip install matplotlib
 #RUN pip install jinja2
 #include requirements
+pip install git+https://github.com/chrisho/grpcpy.git#egg=grpcpy
 COPY requirements.txt ./requirements.txt
 RUN pip install -r requirements.txt
