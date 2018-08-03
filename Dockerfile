@@ -26,4 +26,5 @@ RUN apt-get install -y pandoc vim
 #RUN pip install matplotlib
 #RUN pip install jinja2
 #include requirements
+COPY requirements.txt ./requirements.txt
 RUN pip install -r requirements.txt
